@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto GifOs</title>
+    <link rel="stylesheet" type="text/css" href="./styles/desktop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="theme" class="light">
+
+        <header>
+            <h2>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</h2>
+        
+        <img onClick="window.location.reload()" id="logo" class="logo" alt="logo" src="images/image1.png">
+        <img onClick="window.location.reload()" id="logo1" alt="logo" class="logo1" src="images/logo_dark.png">
+        
+       <button class="create" onclick="location.href='capture.html'">Crear Guifos</button>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Elegir tema
+                    <span onclick="myFunction()" class="down"> <img class="drop" alt="down"
+                    src="images/dropdown.svg"></span></button>
+                <div class="dropdown-content" id="myDropdown">
+                    <button class="darktheme" onclick="getDark()" id="dark">Sailor Night</button>
+                    <button class="lighttheme" onclick="getLight()" id="light"> Sailor Day</button>
+                </div>
+
+                <a href="mygifos.html">
+                <h4><span>M</span>is Guifos</h4>
+                </a>
+                <div class="sub_container"></div>
+                <h6 class="contain_title">Buscar</h6>
+                <div id="menu-dropdown">
+                    <div class="pre_rectagle" id="search-form">
+                        <input class="search-input" autocomplete="off" id="search"
+                        placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" oninput="resultadoSugerido()">
+                        <span class="fill"><button class="search" id="search-button" type="submit" onclick="getSearchResults()">
+                                Search</button></span>
+                    </div>
+                    <div class="autocomplete-content">
+                    </div>
+                </div>
+            </div>
+            <span></span>
+            <img alt="glass" class="glassinactive" src="images/lupa_inactive.svg">
+            <img alt="glass" class="glass" src="images/Combined_shape.svg">
+            <div class="search-results">
+               
+                <div id="inner_gifs"></div>
+            </div>
+            <div id="results" class="results"></div>
+         
+        </header>
+        
+            <div class="div_today" id="div-today">
+               
+                    <h3 >hoy te sugerimos</h3>
+               
+            </div>
+            <div class="all" id="all">
+          
+            
+      
+    
+
+        <section class="gifs" id="gifs">
+            <div class="close" id="close-1"><img id="close1" alt="closer" onclick="remove1()" src="images/close.svg">
+                <h5>#Jonathanvanness</h5>
+            </div>
+            <div class="close" id="close-2"><img id="close2" alt="closer" onclick="remove2()" src="images/close.svg">
+                <h5>#SailorMercury</h5>
+            </div>
+            <div class="close" id="close-3"> <img  id="close3" alt="closer" onclick="remove3()" src="images/close.svg">
+                <h5>#FabFive</h5>
+            </div>
+            <div class="close" id="close-4"><img id="close4"  alt="closer" onclick="remove4()" src="images/close.svg">
+                <h5>#Unicorns&Rainbows</h5>
+            </div>
+        </section>
+
+
+        <div class="one">
+            <img src=""  id="Jonathanvanness" alt="Jonathanvanness">
+            <img src="" id="SailorMercury" alt="SailorMercury">
+            <img src="" alt="FabFive" id="FabFive">
+            <img src="" id="UnicornsRainbows" alt="UnicornsRainbows">
+        </div>
+
+
+
+        <div class="two">
+            <button class="look" onclick="search1()" id="look_1">Ver más…</button>
+            <button class="look" onclick="search2()" id="look_2">Ver más…</button>
+            <button class="look" onclick="search3()" id="look_3">Ver más…</button>
+            <button class="look" onclick="search4()" id="look_4">Ver más…</button>
+        </div>
+        <div class="div_trends">
+            <h3>Tendencias</h3>
+                  
+              
+           </div>
+        <div class="resultsT" id="resultsT">
+
+        </div>
+ 
+
+        <div class="searching" id="searching"></div>
+        <button id="go-up" onclick="topFunction()" class="scroll">
+            <img class="img-up" alt="go-up" src="images/dropdown.svg">
+        </button>
+
+    </div>
+        <script src="darkmode.js"></script>
+        <script src="main.js"></script>
+        
+    </div>
+</body>
+
+</html>
